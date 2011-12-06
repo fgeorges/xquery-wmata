@@ -1,6 +1,6 @@
 <project xmlns="http://expath.org/ns/project"
          name="http://wmata.com/lib/api"
-         abbrev="wmata-xquery"
+         abbrev="wmata-client"
          version="0.1.0">
 
    <title>The WMATA library for XQuery</title>
