@@ -1,0 +1,18 @@
+<package xmlns="http://cxan.org/ns/package"
+         id="wmata-client">
+
+   <abstract>
+      Client library for the HTTP-based API of WMATA.
+   </abstract>
+
+   <author id="jwicentowski">Joe Wicentowski</author>
+
+   <category id="web-api">Web API</category>
+
+   <tag>web-api</tag>
+   <tag>library</tag>
+   <tag>http</tag>
+   <tag>wmata</tag>
+   <tag>xquery</tag>
+
+</package>
