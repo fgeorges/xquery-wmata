@@ -1,3 +1,5 @@
+module namespace wmata = "http://www.wmata.com";
+
 (:~  
  : An XQuery module for interacting with the WMATA Metro Transparent Data Sets API, which offers 
  : methods describing Metrorail and Metrobus transit systems.  The methods for Metrorail include 
@@ -10,8 +12,6 @@
  : @author Joe Wicentowski
  : @version 1.0
  :)
-
-module namespace wmata = "http://www.wmata.com";
 
 import module namespace http = "http://expath.org/ns/http-client";
 
