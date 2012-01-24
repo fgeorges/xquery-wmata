@@ -5,4 +5,11 @@
 
    <title>The WMATA library for XQuery</title>
 
+   <tests dir="test">
+      <processor name="http://expath.org/tmp/exist/xquery" report="$1-exist.html">
+         <property name="endpoint"         value="http://localhost:8080/exist/rest/db/"/>
+         <property name="utils-library-at" value="xmldb:exist:///db/xspec/generate-query-utils.xql"/>
+      </processor>
+   </tests>
+
 </project>
