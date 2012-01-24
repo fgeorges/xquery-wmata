@@ -1,0 +1,20 @@
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:wmata="http://www.wmata.com"
+               query="http://www.wmata.com"
+               query-at="../src/wmata.xqm">
+
+   <x:variable name="key" select="'7q4pvuydpfbtpxncapakaz55'"/>
+
+   <x:scenario label="Simple get rail lines">
+      <x:call function="wmata:get-rail-lines">
+         <x:param select="$key"/>
+      </x:call>
+      <x:expect label="one result" test="count($x:result) eq 1"/>
+      <x:expect label="one root LinesResp" test="
+          $x:result instance of element(wmata:LinesResp)"/>
+      <x:expect label="five lines" test="
+          count($x:result/wmata:Lines/wmata:Line) eq 5"/>
+   </x:scenario>
+
+</x:description>
