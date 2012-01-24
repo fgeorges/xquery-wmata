@@ -227,7 +227,7 @@ declare function wmata:get-bus-stops($api-key as xs:string, $latitude as xs:long
  : @param $include-variations Some routes (like "10B") have variations like "10Bv1", "10Bv4". You can retrieve the schedule for all variations at once or individually.
  : @return the bus schedule associated with a requested route
  :)
-declare function wmata:get-bus-stops($api-key as xs:string, $route-id as xs:string, $date as xs:date, $include-variations as xs:boolean) as element(wmata:RouteScheduleInfo) {
+declare function wmata:get-bus-schedule-by-route($api-key as xs:string, $route-id as xs:string, $date as xs:date, $include-variations as xs:boolean) as element(wmata:RouteScheduleInfo) {
     let $api-url := 'http://api.wmata.com/Bus.svc/RouteSchedule'
     let $params := 
         (
